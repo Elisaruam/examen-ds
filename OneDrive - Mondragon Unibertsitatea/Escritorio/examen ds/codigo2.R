@@ -34,7 +34,7 @@ C.tangana<-get_artist_top_tracks(
 )
 
 C.tanganaTop <- C.tangana %>%
-  filter(track==max(popularity)) %>%
+  filter(popularity==max(popularity)) %>%
   select(track_id)
 
   
@@ -49,7 +49,7 @@ NathyPeluso<-get_artist_top_tracks(
 )
 
 NathyPelusoTop <- NathyPeluso %>%
-  filter(track==max(popularity)) %>%
+  filter(popularity==max(popularity)) %>%
   select(track_id)
 
 
@@ -62,7 +62,7 @@ CruzCafune<-get_artist_top_tracks(
   token = my_token
 )
 CruzCafuneTop <- CruzCafune %>%
-  filter(track==max(popularity)) %>%
+  filter(popularity==max(popularity)) %>%
   select(track_id)
 
 
@@ -77,7 +77,7 @@ kiddKeo<-get_artist_top_tracks(
 )
 
 kiddKeoTop <- kiddKeo %>%
-  filter(track==max(popularity)) %>%
+  filter(popularity==max(popularity)) %>%
   select(track_id)
 
 AlvaroDiaz<-get_artist_top_tracks(
@@ -90,7 +90,7 @@ AlvaroDiaz<-get_artist_top_tracks(
 )
 
 AlvaroDiazTop <- AlvaroDiaz %>%
-  filter(track==max(popularity)) %>%
+  filter(popularity==max(popularity)) %>%
   select(track_id)
 
 BadGyal<-get_artist_top_tracks(
@@ -103,7 +103,7 @@ BadGyal<-get_artist_top_tracks(
 )
 
 BadGyalTop <- BadGyal %>%
-  filter(track==max(popularity)) %>%
+  filter(popularity==max(popularity)) %>%
   select(track_id)
 
 
@@ -116,7 +116,7 @@ LolaIndigio<-get_artist_top_tracks(
   token = my_token
 )
 LolaIndigioTop <- LolaIndigio %>%
-  filter(track==max(popularity)) %>%
+  filter(popularity==max(popularity)) %>%
   select(track_id)
 
 YungBee<-get_artist_top_tracks(
@@ -128,7 +128,7 @@ YungBee<-get_artist_top_tracks(
   token = my_token
 )
 YungBeeTop <- YungBee %>%
-  filter(track==max(popularity)) %>%
+  filter(popularity==max(popularity)) %>%
   select(track_id)
 
 DELLAFUENTE<-get_artist_top_tracks(
@@ -141,7 +141,7 @@ DELLAFUENTE<-get_artist_top_tracks(
 )
 
 DELLAFUENTETop <- DELLAFUENTE %>%
-  filter(track==max(popularity)) %>%
+  filter(popularity==max(popularity)) %>%
   select(track_id)
 
 LelePons<-get_artist_top_tracks(
@@ -154,7 +154,7 @@ LelePons<-get_artist_top_tracks(
 )
 
 LelePonsTop <- LelePons %>%
-  filter(track==max(popularity)) %>%
+  filter(popularity==max(popularity)) %>%
   select(track_id)
 
 tops<-data.frame(LelePonsTop,DELLAFUENTETop,YungBeeTop,LolaIndigioTop,BadGyalTop,AlvaroDiazTop,kiddKeoTop,CruzCafuneTop,NathyPelusoTop,C.tanganaTop)
